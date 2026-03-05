@@ -75,10 +75,12 @@ For example, nested loops that iterate over the same data set are O(n^2).
 function quadraticTimeExample(arr) {
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr.length; j++) {
-            console.log(arr[i], arr[j]); // O(n^2) - Nested loops
+            console.log("============\n", arr[i], arr[j]); // O(n^2) - Nested loops
         }
     }
 }
+quadraticTimeExample(arr); // O(n^2) - Quadratic time complexity
+
 /**
 
 O(log n) - Logarithmic Time: The algorithm's time increases logarithmically as the input size increases. 
